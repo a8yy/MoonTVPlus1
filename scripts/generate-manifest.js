@@ -11,13 +11,13 @@ const publicDir = path.join(projectRoot, 'public');
 const manifestPath = path.join(publicDir, 'manifest.json');
 
 // 从环境变量获取站点名称
-const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'MoonTVPlus';
+const siteName = process.env.NEXT_PUBLIC_SITE_NAME || '看吧';
 
 // manifest.json 模板
 const manifestTemplate = {
   name: siteName,
   short_name: siteName,
-  description: '影视聚合',
+  description: '看吧提供最新电影、电视剧、综艺、动漫高清在线观看,每日更新,观影流畅,享受新视觉体验。',
   start_url: '/',
   scope: '/',
   display: 'standalone',
